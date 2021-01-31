@@ -11,7 +11,7 @@ public class Room3 extends Room implements Interactable{
     public String interact(Player player) {
         player.addToScore(10);
         player.addToInventory("Alien Clothing");
-        return "You take some of the cloths and put them on, and damn, do you look good in them.";
+        return "*You take some of the cloths and put them on, and damn, do you look good in them.*\n*Alien Clothing added to inventory!*";
     }
 
     @Override

@@ -11,7 +11,7 @@ public class Room4 extends Room implements Lootable{
     public String loot(Player player) {
         player.addToScore(500);
         player.addToInventory("Ancient Coins(500)");
-        return "You start randomly mashing the buttons in hopes to find a way out.\nInstead a shower of coins rains on you. You pick up as many as you can carry.";
+        return "*You start randomly mashing the buttons in hopes to find a way out.*\n*Instead a shower of coins rains on you. You pick up as many as you can carry.*\n*Ancient Coins(500) added to inventory!*";
     }
 
     @Override

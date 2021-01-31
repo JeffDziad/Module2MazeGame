@@ -9,7 +9,7 @@ public class Room5 extends Room implements Interactable{
 
     @Override
     public String interact(Player player) {
-        return "To investigate further, you wipe the condensation off the glass.\nYou cant believe you're eyes, these are aliens preserved in some sort of cryogenic chamber.";
+        return "*To investigate further, you wipe the condensation off the glass.*\n*You cant believe you're eyes, these are aliens preserved in some sort of cryogenic chamber.*";
     }
 
     @Override

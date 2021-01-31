@@ -54,7 +54,7 @@ public class Maze {
         if(currentRoom instanceof Lootable){
             return ((Lootable) currentRoom).loot(player);
         }else{
-            return "I dont see anything that I can take with me.";
+            return "I don't see anything that I can take with me.";
         }
     }
 

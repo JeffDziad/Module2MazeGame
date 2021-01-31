@@ -30,8 +30,12 @@ public class Main {
             userInputChar = Character.toUpperCase(userInputChar);
             //check if user inputted a movement command
             if(checkForMove(possibleMoves, userInputChar)){
-                if(!maze.move(userInputChar)){
-                    System.out.println("That's not a valid move.");
+                if(player.getHasKey()){
+                    if(!maze.move(userInputChar)){
+                        System.out.println("That's not a valid move.");
+                    }
+                }else{
+                    System.out.println("*You try your hardest, but you cant seem to pry the doors open. Maybe its time to look around some more?*");
                 }
             }else if(userInputChar == 'I'){
                 System.out.println(maze.interactWithCurrentRoom());
@@ -42,7 +46,7 @@ public class Main {
             }else if(userInputChar == 'V'){
                 System.out.println("Inventory: " + maze.getPlayerInventory());
             }else{
-                System.out.println("Not a valid command!");
+                System.out.println("*Not a valid command!*");
             }
         }
         System.out.println("Your final score was: " + maze.getPlayerScore() + " Points");

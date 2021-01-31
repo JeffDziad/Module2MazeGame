@@ -8,6 +8,8 @@ public class Player {
     private int score = 0;
     private List<String> inventory = new ArrayList<>();
 
+    private boolean hasKey = false;
+
     public void addToInventory(String item){
         inventory.add(item);
     }
@@ -19,7 +21,7 @@ public class Player {
     public String getInventory(){
         StringBuilder output = new StringBuilder("");
         if(inventory.size() == 0) {
-            return "Your Inventory is Empty!";
+            return "*Your Inventory is Empty!*";
         }else{
             for(String item : inventory){
                 output.append(item).append(", ");
@@ -34,6 +36,14 @@ public class Player {
 
     public int getScore(){
         return score;
+    }
+
+    public boolean getHasKey(){
+        return hasKey;
+    }
+
+    public void setHasKey(boolean bool){
+        hasKey = bool;
     }
 
 }

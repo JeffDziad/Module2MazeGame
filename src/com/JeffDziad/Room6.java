@@ -9,12 +9,12 @@ public class Room6 extends Room implements Exit, Interactable{
 
     @Override
     public String exit(Player player) {
-        return "You step onto the glowing circle and the ceiling opens above you. You wait a few seconds and you are teleported back to the surface.\nIt seems you may live to tell your story.";
+        return "*You step onto the glowing circle and the ceiling opens above you. You wait a few seconds and you are teleported back to the surface.*\n*It seems you may live to tell your story.*";
     }
 
     @Override
     public String interact(Player player) {
-        return "You step onto the glowing circle and the ceiling opens above you.";
+        return "*You step onto the glowing circle and the ceiling opens above you.*";
     }
 
     @Override

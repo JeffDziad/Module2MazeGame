@@ -11,7 +11,7 @@ public class Room2 extends Room implements Interactable{
     public String interact(Player player) {
         player.addToScore(10);
         player.addToInventory("Alien Tablets(2)");
-        return "You quickly grab as many as you can hold in hopes to decode them once you get back to Mars Base Alpha.";
+        return "*You quickly grab as many as you can hold in hopes to decode them once you get back to Mars Base Alpha.*\n*Alien Tablets(2) added to inventory!*";
     }
 
     @Override
